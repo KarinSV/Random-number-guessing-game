@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random number guessing game</title>
+    <link rel="stylesheet" href="styles.css" >
 </head>
 <body>
-    <h1>Guess the Number between 1 and 10!</h1>
-   
+    <main>
+        <h1>Guess the Number between 1 and 100!</h1>
+        <form id="guessForm">
+            <input type="text" name="guess" placeholder="Put your number">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <div class="error-message" id="errorMessage"></div>
+    <div class="success-message" id="successMessage"></div>
     <script src="script.js"></script>
 </body>
 </html>

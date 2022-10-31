@@ -1,22 +1,32 @@
-const randomNumber = Math.floor(Math.random() * 10) + 1
-    console.log('Random Number', randomNumber)
-   
-    while(true){
-    let guessNumber = Number(prompt('Guess the Number between 1 and 10'));
+const form = document.getElementById("guessForm");
+const errorMessage = document.getElementById("errorMessage");
+const successMessage = document.getElementById("successMessage");
 
-    if (guessNumber === randomNumber){
-        alert("You got it right!");
-        break
-    }
+let number = Math.floor(Math.random() * 100) + 1;
+console.log(number);
 
-    else if (guessNumber > randomNumber) {
-       alert ("Your guess was " + guessNumber + ". That's too high. Try Again!");
-       while (guessNumber > randomNumber) {
-        let guessNumber = Number(prompt('Guess the Number between 1 and 10'));
-    }
-    }
+form.onsubmit = function (event) {
+  event.preventDefault();
 
-    else if (guessNumber < randomNumber) {
-        alert("Your guess was " + guessNumber + ". That's too low. Try Again!")
-    }
-    }  
+  let guess = Number(form.elements.guess.value);
+  form.elements.guess.value = "";
+
+  if (Number.isNaN(guess)) {
+    showErrorMessage("That is not a number...");
+  } else if (guess === number) {
+    showSuccessMessage.innerHTML = "Congratulation!!! That's correct number";
+  } else if (guess < number) {
+    showErrorMessage("Let's try higher");
+  } else if (guess > number) {
+    showErrorMessage("Let's try lower");
+  }
+};
+
+function showErrorMessage(message) {
+  errorMessage.classList.add("visible");
+  errorMessage.innerHTML = message;
+
+  setTimeout(function () {
+    errorMessage.classList.remove("visible");
+  }, 1000);
+}
