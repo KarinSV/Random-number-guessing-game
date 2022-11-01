@@ -2,6 +2,12 @@ const form = document.getElementById("guessForm");
 const errorMessage = document.getElementById("errorMessage");
 const successMessage = document.getElementById("successMessage");
 
+
+function $(id){
+  return document.getElementById(id);
+}
+
+
 let number = Math.floor(Math.random() * 100) + 1;
 console.log(number);
 
@@ -15,6 +21,7 @@ form.onsubmit = function (event) {
     showErrorMessage("That is not a number&#x2757");
   } else if (guess === number) {
     showSuccessMessage("Congratulation!!! &#x1F389 That's correct number");
+    window.setTimeout(function(){location.reload()},3000);
   } else if (guess < number) {
     showErrorMessage("Let's try higher &#x2B06");
   } else if (guess > number) {
