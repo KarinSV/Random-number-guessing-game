@@ -12,7 +12,6 @@ form.onsubmit = function (event) {
   form.elements.guess.value = "";
 
   if (Number.isNaN(guess)) {
-    showErrorMessage("That is not a number...");
   } else if (guess === number) {
     showSuccessMessage("Congratulation!!! That's correct number");
   } else if (guess < number) {

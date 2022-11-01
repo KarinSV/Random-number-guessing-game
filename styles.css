@@ -49,7 +49,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(43, 67, 226);
+    background-color: rgb(103, 132, 226);
     padding: 2rem;
     visibility: hidden;
     transition: 1s;
