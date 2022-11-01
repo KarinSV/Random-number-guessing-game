@@ -12,12 +12,14 @@ form.onsubmit = function (event) {
   form.elements.guess.value = "";
 
   if (Number.isNaN(guess)) {
-  } else if (guess === number) {
+    showErrorMessage("That is not a number&#x2757");
+  }
+    else if (guess === number) {
     showSuccessMessage("Congratulation!!! &#x1F389 That's correct number");
   } else if (guess < number) {
-    showErrorMessage("Let's try higher");
+    showErrorMessage("Let's try higher &#x2B06");
   } else if (guess > number) {
-    showErrorMessage("Let's try lower");
+    showErrorMessage("Let's try lower &#x2B07");
   }
 };
 
