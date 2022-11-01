@@ -14,7 +14,7 @@ form.onsubmit = function (event) {
   if (Number.isNaN(guess)) {
     showErrorMessage("That is not a number...");
   } else if (guess === number) {
-    showSuccessMessage.innerHTML = "Congratulation!!! That's correct number";
+    showSuccessMessage("Congratulation!!! That's correct number");
   } else if (guess < number) {
     showErrorMessage("Let's try higher");
   } else if (guess > number) {
@@ -28,5 +28,14 @@ function showErrorMessage(message) {
 
   setTimeout(function () {
     errorMessage.classList.remove("visible");
+  }, 1000);
+}
+
+function showSuccessMessage(message) {
+  successMessage.classList.add("visible");
+  successMessage.innerHTML = message;
+
+  setTimeout(function () {
+    successMessage.classList.remove("visible");
   }, 1000);
 }
