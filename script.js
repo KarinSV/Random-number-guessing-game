@@ -13,7 +13,7 @@ form.onsubmit = function (event) {
 
   if (Number.isNaN(guess)) {
   } else if (guess === number) {
-    showSuccessMessage("Congratulation!!! That's correct number");
+    showSuccessMessage("Congratulation!!! &#x1F389 That's correct number");
   } else if (guess < number) {
     showErrorMessage("Let's try higher");
   } else if (guess > number) {
