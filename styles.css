@@ -55,6 +55,7 @@
     transition: 1s;
     border-style: solid;
     font-size: 20px;
+    font-weight: bolder;
   }
   
   .visible {
