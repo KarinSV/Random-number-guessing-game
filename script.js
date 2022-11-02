@@ -21,7 +21,9 @@ form.onsubmit = function (event) {
     showErrorMessage("That is not a number&#x2757");
   } else if (guess === number) {
     showSuccessMessage("Congratulation!!! &#x1F389 That's correct number");
-    window.setTimeout(function(){location.reload()},3000);
+    // window.setTimeout(function(){location.reload()},2000);
+    number = Math.floor(Math.random() * 100) + 1;
+    console.log(number);
   } else if (guess < number) {
     showErrorMessage("Let's try higher &#x2B06");
   } else if (guess > number) {
