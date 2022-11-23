@@ -18,12 +18,14 @@
     background-color: aquamarine;
     padding: 20px;
     border-style: solid;
+    border-radius: 5px;
   }
   h1{
     margin-bottom: 20px;
     text-align: center;
     background-color: rgb(134, 151, 220);
     border-style: solid;
+    border-radius: 5px;
   }
 
   form{
@@ -36,12 +38,18 @@
     padding: 5px;
     margin-bottom: 20px;
     text-align: center;
+    border-radius: 5px;
   }
 
   button{
     font-size: 20px;
     border-style: solid;
     padding: 5px;
+    border-radius: 5px;
+  }
+
+  button:hover{
+    background-color: rgb(134, 151, 220);
   }
 
   .error-message, .success-message {
@@ -52,7 +60,7 @@
     background-color: rgb(162, 174, 216);
     padding: 2rem;
     visibility: hidden;
-    transition: 2s;
+    transition: 1s;
     border-style: solid;
     font-size: 20px;
     font-weight: bolder;
@@ -64,20 +72,16 @@
     opacity: 1;
   }
 
-  
+  footer {
+    text-align: center;
+  }
 
-/* 
-  .info{
-    font-size: 1.5em;
-    color: white;
-    margin-bottom: 10px;
-}
+img:hover{
+    background: #fff;
+    opacity: 1;
+    border-radius: 100%;
+  }
 
-.play_again{
-  height: 50px;
-  width: 150px;
-  font-size: 1em;
-}
-.hidden{
-  display: none;
-} */
+  h4{
+    margin: 10px 0;
+  }
