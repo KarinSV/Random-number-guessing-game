@@ -18,7 +18,7 @@ If your number is less than a random number, you will see the screen message: "L
 
 If your number is equal to a random number, you will see the screen message: "Congratulations!!! That's the correct number".
 
-![Home page](/img/correct_number.png)
+![Home page](/img/Congratulations!!!.png)
 
 After that, the game will repeat. You can try to guess the new random number between 0 and 100.
 
