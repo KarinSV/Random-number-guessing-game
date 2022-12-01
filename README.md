@@ -1,11 +1,9 @@
 # The guess number game 
-___
 
 ![Home page](/img/first_screen.png)
-___
 
 # Project description
-___
+
 The game generates a random number between 0 and 100, which you need to guess. The game will not stop before you guess the number. Put your number between 0 and 100 within input and press button submit.
 
 ![Home page](/img/your_number.png)
@@ -23,7 +21,6 @@ If your number is equal to a random number, you will see the screen message: "Co
 ![Home page](/img/correct_number.png)
 
 After that, the game will repeat. You can try to guess the new random number between 0 and 100.
-___
 
 ## Languages Used  
 
